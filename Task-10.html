@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check the console for the results</h1>
+    <script>
+        const arr1 = [10,20,30]
+        const arr2 = [40,50,60]
+        const arr3 = arr1.concat(arr2)
+        console.log("concat: ",arr3)
+        console.log("every: ")
+        console.log(arr3.every((val)=>val>30))
+        console.log("some: ")
+        console.log(arr3.some((val)=>val>30))
+        console.log("push: ")
+        const fruits = ['apple', 'banana']
+        console.log(fruits)
+        fruits.push('orange')
+        console.log("pop: ")
+        const lastFruit = fruits.pop()
+        console.log(fruits)
+        console.log(lastFruit)
+        console.log("slice: ")
+        const fruits1 = ['apple', 'banana', 'orange', 'kiwi']
+        const sliced = fruits1.slice(1, 3)
+        console.log(sliced)
+        console.log("forEach")
+        const numbers = [1, 2, 3]
+        numbers.forEach((num) => {
+            console.log(num)
+        });
+    </script>
+</body>
+</html>

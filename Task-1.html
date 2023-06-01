@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1</title>
+  <script>
+    function showTime() {
+      var currentTime = new Date();
+      var timeString = currentTime.toLocaleTimeString();
+      document.getElementById("dispTime").innerHTML = "Current Time: " + timeString;
+    }
+
+    function showDate() {
+      var currentDate = new Date();
+      var dateString = currentDate.toLocaleDateString();
+      document.getElementById("dispDate").innerHTML = "Current Date: " + dateString;
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showDate()">Show Date</button><br>
+  <div id="dispDate"></div><br>
+  <button onclick="showTime()">Show Time</button><br>
+  <div id="dispTime"></div>
+</body>
+</html>
